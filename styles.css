@@ -1,0 +1,178 @@
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+	background-image: url(../img/green.jpg);
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.wrapper, header, .content, main, footer {
+	box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1, h2, h3 { 
+	font-weight: normal;
+ }
+ 
+.imgstyle {
+	 border: 0;
+	 width: 88px;
+	 height: 31px;
+ }
+ 
+ /*the general container for all elements*/
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 10px 10px;
+	background-color: white;
+	border: 3px solid  #206040;
+}
+
+.wrapper:hover {
+	border: 7px solid  #206040;
+}
+
+header {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	width: 20%;
+	padding-top: 2%;
+	margin-right: 10px;
+}
+
+hr {
+	width: 100%;
+	height: 3px;
+	background-color: #7d97ad;
+}
+
+.container {
+	display: block;
+	width: 100%;
+}
+
+.content {
+	margin: 25px auto 20px;
+	width: 80%;
+}
+
+main {
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.myworks {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+
+.one {
+	order: -1;
+	width: 50%;
+}
+
+.two {
+	order: 0;
+	width: 50%;
+}
+
+.three {
+	order: 1;
+	width: 50%;
+}
+.four {
+	order:2;
+	width: 50%;
+}
+.five {
+	order: 3;
+	width: 50%;
+}
+
+main h2 {
+	padding-left: 20px;
+}
+
+footer {
+	color: black;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+footer h3 {
+	font-size: 11px;
+}
+
+footer a, .myworks a{
+	text-decoration: none;
+	color: black;
+}
+
+.myworks p {
+	text-align: center;
+}
+
+@media screen and (max-width: 490px) {
+	
+	body {
+		font-size: 13px;
+	}
+	
+	footer h3 {
+		font-size: 10px;
+	}
+	
+	.logo {
+		padding-top: 25px;
+	}
+	
+	.one, .two, .three {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+@media screen and (min-width: 491px) and (max-width: 760px) {
+	.logo {
+		padding-top: 25px;
+	}
+}
+
+/*fixed width for devices with large width*/
+@media screen and (min-width: 970px) {
+	
+	.wrapper {
+		width: 970px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+} 
+
+
+
