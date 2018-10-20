@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	background-image: url(../img/green.jpg);
+	background-image: url(./img/green.jpg);
 	font-family: Roboto;
 	font-size: 18px;
 	font-style: italic;
